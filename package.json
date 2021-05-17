@@ -1,0 +1,40 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "puppeteer": "^9.1.1",
+    "slugify": "^1.5.2",
+    "validator": "^13.6.0",
+    "whatwg-url": "^8.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "ndb": "^1.0.39",
+    "prettier": "^2.3.0"
+  },
+  "scripts": {
+    "start:dev": "nodemon —exec babel-node server.js",
+    "start:prod": "NODE_ENV=production nodemon -exec babel-node server.js",
+    "debug": "ndb server.js"
+  },
+  "author": "Myron Walters Jr",
+  "license": "ISC"
+}
